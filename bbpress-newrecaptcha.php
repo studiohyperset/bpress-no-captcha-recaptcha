@@ -61,7 +61,7 @@ function bbp_newrecaptcha_verify_result( $reply_id ) {
 	}
 
 	if ( ! ($resp != null && $resp->success) ) {	
-		bbp_add_error( 'bbp_reply_duplicate', __( '<strong>ERROR</strong>: Failed on captcha', 'bbpress-newrecaptcha' ) );
+		bbp_add_error( 'bbp_reply_duplicate', __( '<strong>ERROR</strong>: reCAPTCHA Failure. Please try again.', 'bbpress-newrecaptcha' ) );
 	}
 
 }
