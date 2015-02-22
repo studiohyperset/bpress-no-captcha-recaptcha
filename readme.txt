@@ -13,7 +13,7 @@ Adds Google’s No CAPTCHA reCAPTCHA (http://www.google.com/recaptcha/intro/inde
 
 == Description ==
 
-Based on Pippin Williamson’ “bbPress reCaptcha” plugin (https://wordpress.org/plugins/bbpress-recaptcha/), this plugin adds Google’s new No CAPTCHA reCAPTCHA (http://www.google.com/recaptcha/intro/index.html) to bbPress forms.
+Based on Pippin Williamson’s “bbPress reCaptcha” plugin (https://wordpress.org/plugins/bbpress-recaptcha/), this plugin adds Google’s new No CAPTCHA reCAPTCHA (http://www.google.com/recaptcha/intro/index.html) to bbPress forms.
 
 
 == Installation ==
