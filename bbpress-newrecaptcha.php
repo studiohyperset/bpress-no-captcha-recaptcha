@@ -61,7 +61,7 @@ function bbp_newrecaptcha_verify_result( $reply_id ) {
 	}
 
 	if ( ! ($resp != null && $resp->success) ) {	
-		bbp_add_error( 'bbp_reply_duplicate', __( '<strong>ERROR</strong>: Failed on captcha', 'bpress-no-captcha-recaptcha' ) );
+		bbp_add_error( 'bbp_reply_duplicate', __( '<strong>ERROR</strong>: Failed on captcha', 'bbpress-newrecaptcha' ) );
 	}
 
 }
@@ -80,7 +80,7 @@ function bbp_newrecaptcha_page() {
 	?>
 	<div class="wrap">
 		
-		<h2><?php _e( 'bbPress No CAPTCHA reCAPTCHA Settings', 'bpress-no-captcha-recaptcha' ); ?></h2>
+		<h2><?php _e( 'bbPress No CAPTCHA reCAPTCHA Settings', 'bbpress-newrecaptcha' ); ?></h2>
 		
 		<?php
 		if ( ! isset( $_REQUEST['updated'] ) )
@@ -88,32 +88,32 @@ function bbp_newrecaptcha_page() {
 		?>
 
 		<?php if ( false !== $_REQUEST['updated'] ) : ?>
-			<div class="updated fade"><p><strong><?php _e( 'Options saved', 'bpress-no-captcha-recaptcha' ); ?></strong></p></div>
+			<div class="updated fade"><p><strong><?php _e( 'Options saved', 'bbpress-newrecaptcha' ); ?></strong></p></div>
 		<?php endif; ?>
 
 		<form method="post" action="options.php">
 
 			<?php settings_fields( 'bbp_newrecaptcha_group' ); ?>
 
-			<h4><?php _e( 'reCaptcha Keys', 'bpress-no-captcha-recaptcha' ); ?></h4>
+			<h4><?php _e( 'reCaptcha Keys', 'bbpress-newrecaptcha' ); ?></h4>
 			<p>
-				<label for="bbp_newrecaptcha[site_key]"><?php _e( 'reCaptcha Site Key', 'bpress-no-captcha-recaptcha' ); ?></label><br/>
+				<label for="bbp_newrecaptcha[site_key]"><?php _e( 'reCaptcha Site Key', 'bbpress-newrecaptcha' ); ?></label><br/>
 				<input id="bbp_newrecaptcha[site_key]" style="width: 300px;" name="bbp_newrecaptcha[site_key]" type="text" value="<?php echo esc_attr( $bbpc_options['site_key'] ); ?>" />
-				<p class="description"><?php _e( 'This your own personal reCaptcha Site key. Go to <a target="_blank" href="https://www.google.com/recaptcha/admin#list">your account</a>, then click on your domain (or add a new one) to find your site key.', 'bpress-no-captcha-recaptcha' ); ?></p>
+				<p class="description"><?php _e( 'This your own personal reCaptcha Site key. Go to <a target="_blank" href="https://www.google.com/recaptcha/admin#list">your account</a>, then click on your domain (or add a new one) to find your site key.', 'bbpress-newrecaptcha' ); ?></p>
 			</p>
 			<p>
-				<label for="bbp_newrecaptcha[secret_key]"><?php _e( 'reCaptcha Secret Key', 'bpress-no-captcha-recaptcha' ); ?></label><br/>
+				<label for="bbp_newrecaptcha[secret_key]"><?php _e( 'reCaptcha Secret Key', 'bbpress-newrecaptcha' ); ?></label><br/>
 				<input id="bbp_newrecaptcha[secret_key]" style="width: 300px;" name="bbp_newrecaptcha[secret_key]" type="text" value="<?php echo esc_attr( $bbpc_options['secret_key'] ); ?>" />
-				<p class="description"><?php _e( 'This your own personal reCaptcha Secret key. Go to <a target="_blank" href="https://www.google.com/recaptcha/admin#list">your account</a>, then click on your domain (or add a new one) to find your secret key.', 'bpress-no-captcha-recaptcha' ); ?></p>
+				<p class="description"><?php _e( 'This your own personal reCaptcha Secret key. Go to <a target="_blank" href="https://www.google.com/recaptcha/admin#list">your account</a>, then click on your domain (or add a new one) to find your secret key.', 'bbpress-newrecaptcha' ); ?></p>
 			</p>
 			<p>
 				<input id="bbp_newrecaptcha[show_to_logged_in]" name="bbp_newrecaptcha[show_to_logged_in]" type="checkbox" value="1" <?php checked( true, isset( $bbpc_options['show_to_logged_in'] ) ); ?>/>
 				<label for="bbp_newrecaptcha[show_to_logged_in]"><?php _e( 'Show to logged-in users?' ); ?></label><br/>
-				<p class="description"><?php _e( 'Should logged in users see the reCaptcha form?', 'bpress-no-captcha-recaptcha' ); ?></p>
+				<p class="description"><?php _e( 'Should logged in users see the reCaptcha form?', 'bbpress-newrecaptcha' ); ?></p>
 			</p>
 
 			<p class="submit">
-				<input type="submit" class="button-primary" value="<?php _e( 'Save', 'bpress-no-captcha-recaptcha' ); ?>" />
+				<input type="submit" class="button-primary" value="<?php _e( 'Save', 'bbpress-newrecaptcha' ); ?>" />
 			</p>
 
 		</form>
@@ -135,6 +135,6 @@ add_action( 'admin_init', 'bbp_newrecaptcha_settings' );
 function bbp_newrecaptcha_menu() {
 
 	// add settings page
-	add_submenu_page('options-general.php', __( 'bbPress No CAPTCHA reCAPTCHA Settings', 'bbpress-recaptcha' ), __( 'bbPress No CAPTCHA reCAPTCHA', 'bbpress-recaptcha' ), 'manage_options', 'bpress-no-captcha-recaptcha-settings', 'bbp_newrecaptcha_page');
+	add_submenu_page('options-general.php', __( 'bbPress No CAPTCHA reCAPTCHA Settings', 'bbpress-recaptcha' ), __( 'bbPress No CAPTCHA reCAPTCHA', 'bbpress-recaptcha' ), 'manage_options', 'bbpress-newrecaptcha-settings', 'bbp_newrecaptcha_page');
 }
 add_action('admin_menu', 'bbp_newrecaptcha_menu');
