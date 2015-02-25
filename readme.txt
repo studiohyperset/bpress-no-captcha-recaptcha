@@ -29,7 +29,7 @@ Based on [Pippin Williamson](https://profiles.wordpress.org/mordauk/)’s [“bb
 
 * To learn about other Studio Hyperset WordPress plugins, visit http://studiohyperset.com/#solutions
 
-* To help develop the Advanced Dates plugin, visit https://github.com/studiohyperset/bpress-no-captcha-recaptcha
+* To help develop the bbPress No CAPTCHA reCAPTCHAs plugin, visit https://github.com/studiohyperset/bpress-no-captcha-recaptcha
 
 == Screenshots ==
 &nbsp;
