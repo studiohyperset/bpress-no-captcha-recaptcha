@@ -7,7 +7,7 @@ Description: Adds Google’s No CAPTCHA reCAPTCHA to bbPress forms.
 Author: Studio Hyperset
 Author URI: http://studiohyperset.com
 Version: 1.0
-Contributors: studiohyperset, cantuaria
+Contributors: studiohyperset, cantuaria, oqm4
 Text Domain: bpress-no-captcha-recaptcha
 */
 

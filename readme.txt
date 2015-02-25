@@ -1,6 +1,6 @@
 === bbPress No CAPTCHA reCAPTCHA ===
 Author URI: http://studiohyperset.com
-Contributors: studiohyperset, cantuaria
+Contributors: studiohyperset, cantuaria, oqm4
 Author: Studio Hyperset
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C2KQADH2TGTS4
 Tags: bbpress, bbpress 2.0, recaptcha, new recaptcha, recaptcha 2.0, anti-spam, captcha, bot protection, anti-bot, bbpress2.0, forums
