@@ -9,18 +9,17 @@ Tested up to: 4.1.1
 Stable tag: 1.0
 License: GPLv2 or later
 
-Adds Google’s No CAPTCHA reCAPTCHA (http://www.google.com/recaptcha/intro/index.html) to bbPress forms.
+Adds Google’s No CAPTCHA reCAPTCHA to bbPress forms.
 
 == Description ==
 
-Based on Pippin Williamson’s “bbPress reCaptcha” plugin (https://wordpress.org/plugins/bbpress-recaptcha/), this plugin adds Google’s new No CAPTCHA reCAPTCHA (http://www.google.com/recaptcha/intro/index.html) to bbPress forms.
-
+Based on [Pippin Williamson](https://profiles.wordpress.org/mordauk/)’s [“bbPress reCaptcha” plugin](https://wordpress.org/plugins/bbpress-recaptcha/), this plugin adds Google’s [No CAPTCHA reCAPTCHA](http://www.google.com/recaptcha/intro/index.html) to bbPress forms.
 
 == Installation ==
 
-1. Install and activate the plugin. If you have questions about managing plugins, see this article from the WP Codex: http://codex.wordpress.org/Managing_Plugins.
+1. Install and activate the plugin. If you have questions about managing plugins, see this article from the [WP Codex](http://codex.wordpress.org/Managing_Plugins).
 
-2. Go to Settings >  bbPress No CAPTCHA reCAPTCHA and enter your site and secret keys. To create these keys, set up an account here: https://www.google.com/recaptcha/admin.
+2. Go to Settings >  bbPress No CAPTCHA reCAPTCHA and enter your site and secret keys. To create these keys, set up an account [here](https://www.google.com/recaptcha/admin).
 
 == Frequently Asked Questions ==
 
