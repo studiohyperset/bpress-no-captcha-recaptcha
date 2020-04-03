@@ -5,7 +5,7 @@ Author: Studio Hyperset
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C2KQADH2TGTS4
 Tags: bbpress, bbpress 2.0, recaptcha, new recaptcha, recaptcha 2.0, anti-spam, captcha, bot protection, anti-bot, bbpress2.0, forums
 Requires at least: 3.0
-Tested up to: 5.3
+Tested up to: 5.4
 Stable tag: 1.0
 License: GPLv2 or later
 
